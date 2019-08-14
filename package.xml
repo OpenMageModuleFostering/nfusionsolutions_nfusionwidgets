@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>Nfusionsolutions_NfusionWidgets</name>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
     <stability>stable</stability>
     <license>Open Software License (OSL)</license>
     <channel>community</channel>
@@ -10,8 +10,8 @@
     <description>This extension adds capability to easily add nFusion Solutions Precious Metals Pricing Widgets to your Magento website. All settings are provided in the Magento admin.</description>
     <notes>Precious Metals Pricing Widgets from nFusion Solutions</notes>
     <authors><author><name>nFusion Solutions</name><user>nfusion</user><email>support@nfusionsolutions.com</email></author></authors>
-    <date>2016-06-03</date>
-    <time>04:02:51</time>
+    <date>2016-07-22</date>
+    <time>04:51:24</time>
     <contents><target name="magecommunity"><dir name="Nfusionsolutions"><dir name="NfusionWidgets"><dir name="Block"><dir name="Adminhtml"><dir name="Nfusionwidgets"><dir name="Edit"><file name="Form.php" hash="25fc57e86af309a16bf6642ced67c2ae"/><dir name="Tab"><file name="Form.php" hash="1a9ab5aeb7f2689944f0f82f577c665b"/></dir><file name="Tabs.php" hash="804cd4f46f65f119a4513419ae2f9e73"/></dir><file name="Edit.php" hash="41d9224c4f0290ffcc882331f54a7364"/><file name="Grid.php" hash="1762bd6a94d8e5b44ce55f01872ee3ac"/></dir><file name="Nfusionwidgets.php" hash="03e8a99a14d6c2d817cae28b5d037621"/></dir><file name="Nfusionwidgets.php" hash="3301d504c99ca83ae8fa1a868c27d9a2"/><dir name="Widget"><file name="Block.php" hash="da855dc76fef5baa44fb6fac70c90305"/><file name="Fieldcustom.php" hash="6f8f13e5924de026a462d4ffee48da03"/></dir></dir><dir name="Helper"><file name="Data.php" hash="8da8b7595591c08fca1308eea33acf69"/></dir><dir name="Model"><dir name="Mysql4"><dir name="Nfusionwidgets"><file name="Collection.php" hash="045c8e6ea466e06c8972455d6779746d"/></dir><file name="Nfusionwidgets.php" hash="5e7cb4b543e324f20a60d02920bc3589"/></dir><file name="Nfusionwidgets.php" hash="0f93be591a16dcf65d91ab7399a2d43b"/><dir name="Source"><file name="Widgetslist.php" hash="2dd6a7a96852d3630b4a51dd60073e40"/></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="NfusionwidgetsController.php" hash="fcb65b11a0d188d579ce40fa3053bb84"/></dir></dir><dir name="etc"><file name="config.xml" hash="56ab7826c9e1c3181840cca270f76065"/><file name="widget.xml" hash="9c5b6cfc6182ff897582aa2539e5b583"/></dir><dir name="sql"><dir name="nfusionwidgets_setup"><file name="mysql4-install-0.1.0.php" hash="334fb7fd88fd549d2e39946de776ec38"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="nfusionwidgets.xml" hash="ad8869a7804ca74eb95d40993cce541a"/></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="nfusionwidgets"><dir name="widget"><file name="default.phtml" hash="4772a0ff70295e7c32a235860a1af178"/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Nfusionsolutions_NfusionWidgets.xml" hash="c1d3254bf2983e88a1bd9aca95314a8b"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
