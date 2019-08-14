@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<widgets>    
+	<nfusionwidgets_nfusionwidgets type="nfusionwidgets/widget_block" translate="name description" module="nfusionwidgets">
+        <name>nFusion Widgets</name>
+        <description type="desc">List of Widgets</description>
+        <parameters>	    
+			<chart_id>
+                <label>Choose widget</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>select</type>
+                <source_model>nfusionwidgets/source_widgetslist</source_model>				
+            </chart_id>
+			<chart_parameters>
+                <label>Parameters</label>
+                <visible>1</visible>                
+                <type>text</type>				
+            </chart_parameters>
+			<chart_layout>
+                <label>Full Width</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>select</type>
+				<value>1</value>
+				<source_model>adminhtml/system_config_source_yesno</source_model>				
+            </chart_layout>
+			<chart_width>
+                <label>Fixed Width</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>text</type>
+				<depends><chart_layout><value>0</value></chart_layout></depends>
+            </chart_width>
+			<chart_code>
+                <label>Widget Code</label>
+				<description>It must be unique identifier</description>
+                <visible>1</visible>                
+                <type>text</type> 				
+            </chart_code>
+			<template translate="label">
+                <label>Template</label>
+                <visible>0</visible>
+                <type>select</type>
+                <value>nfusionwidgets/widget/default.phtml</value>
+                <values>
+                    <default translate="label">
+                        <value>nfusionwidgets/widget/default.phtml</value>
+                        <label>nFusion Widget Default Template</label>
+                    </default>
+                </values>
+                <sort_order>10</sort_order>
+            </template>
+		   
+        </parameters>
+    </nfusionwidgets_nfusionwidgets>
+</widgets>

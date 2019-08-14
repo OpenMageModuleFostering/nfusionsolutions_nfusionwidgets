@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+  <nfusionwidgets_adminhtml_nfusionwidgets_index>
+	<reference name="content">
+	  <block type="nfusionwidgets/adminhtml_nfusionwidgets" name="nfusionwidgets" />
+	</reference>
+  </nfusionwidgets_adminhtml_nfusionwidgets_index>
+</layout>

@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Nfusionsolutions_NfusionWidgets>
+      <version>0.1.0</version>
+    </Nfusionsolutions_NfusionWidgets>
+  </modules>
+  <global>
+    <helpers>
+      <nfusionwidgets>
+        <class>Nfusionsolutions_NfusionWidgets_Helper</class>
+      </nfusionwidgets>
+    </helpers>
+	<blocks>
+	  <nfusionwidgets>
+		<class>Nfusionsolutions_NfusionWidgets_Block</class>
+	  </nfusionwidgets>
+	</blocks>
+	<models>
+	  <nfusionwidgets>
+		<class>Nfusionsolutions_NfusionWidgets_Model</class>
+		<resourceModel>nfusionwidgets_mysql4</resourceModel>
+	  </nfusionwidgets>
+	  <nfusionwidgets_mysql4>
+		<class>Nfusionsolutions_NfusionWidgets_Model_Mysql4</class>
+		<entities>		  
+			  <nfusionwidgets>
+				<table>nfusion_widgets</table>
+			  </nfusionwidgets>
+        </entities>
+	  </nfusionwidgets_mysql4>
+	</models>
+	<resources>
+	  <nfusionwidgets_setup>
+		<setup>
+		  <module>Nfusionsolutions_NfusionWidgets</module>
+		</setup>
+		<connection>
+		  <use>core_setup</use>
+		</connection>
+	  </nfusionwidgets_setup>
+	  <nfusionwidgets_write>
+		<connection>
+		  <use>core_write</use>
+		</connection>
+	  </nfusionwidgets_write>
+	  <nfusionwidgets_read>
+		<connection>
+		  <use>core_read</use>
+		</connection>
+	  </nfusionwidgets_read>
+	</resources>
+  </global>
+  <admin>
+	<routers>
+	  <nfusionwidgets>
+	    <use>admin</use>
+		<args>
+		  <module>Nfusionsolutions_NfusionWidgets</module>
+		  <frontName>admin_nfusionwidgets</frontName>
+		</args>
+	  </nfusionwidgets>
+	</routers>
+  </admin>
+  <adminhtml>
+	<menu>
+	  <nfusionsolutions_currencyexchangerates module="nfusionwidgets">
+		<title>nFusion Solutions</title>
+		<sort_order>100</sort_order>
+		<children>
+			<nfusionwidgets module="nfusionwidgets">
+				<title>Widgets</title> 
+				<sort_order>10</sort_order>
+				<children>
+						<nfusionwidgets module="nfusionwidgets">
+							<title>Manage nFusion Widgets</title>
+							<action>admin_nfusionwidgets/adminhtml_nfusionwidgets</action>
+							<sort_order>2</sort_order>
+						</nfusionwidgets>
+					</children>
+			</nfusionwidgets>
+		</children>
+	  </nfusionsolutions_currencyexchangerates>
+	</menu>
+	<acl>
+	  <resources>
+		<all>
+		  <title>Allow Everything</title>
+		</all>
+		<admin>
+		  <children>
+			<nfusionwidgets translate="title" module="nfusionwidgets">
+			  <title>NfusionWidgets</title>
+			  <sort_order>1000</sort_order>
+			  <children>
+		  <nfusionwidgets translate="title">
+			<title>Manage Nfusionwidgets</title>
+			<sort_order>0</sort_order>
+		  </nfusionwidgets>
+			  </children>
+			</nfusionwidgets>
+		  </children>
+		</admin>
+	  </resources>
+	</acl>
+	<layout>
+	  <updates>
+		<nfusionwidgets>
+		  <file>nfusionwidgets.xml</file>
+		</nfusionwidgets>
+	  </updates>
+	</layout>
+  </adminhtml>
+</config> 

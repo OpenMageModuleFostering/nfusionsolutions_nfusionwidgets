@@ -1,0 +1,26 @@
+<?php
+$chart_id = $this->getData('chart_id');
+$parameters = $this->getData('chart_parameters');
+$chart_code = $this->getData('chart_code');
+
+$chart = Mage::getModel('nfusionwidgets/nfusionwidgets')->load($chart_id);		
+
+if($this->getData('chart_layout')==1)
+	$width = "100%";
+else
+	$width = $this->getData('chart_width')."px";
+
+
+if($parameters!='')
+	$parameters = '?'.$parameters;
+$unique_id = uniqid('nfusion').$chart_code;
+?>
+<div style="width:<?php echo $width ?>" id="<?php echo $unique_id ?>"></div>
+<script>
+(function(){
+var t = document.getElementsByTagName("script")[0];
+var s = document.createElement("script"); s.async = true;
+s.src = "<?php echo $chart->getData('chart_code')."/".$unique_id.$parameters ?>";
+t.parentNode.insertBefore(s, t);
+})();
+</script>
