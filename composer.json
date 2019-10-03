@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Nfusionsolutions_NfusionWidgets",
+    "name": "openmage-module-fostering\/nfusionsolutions_nfusionwidgets",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "This extension adds the capability in Magento to add Precious Metals Pricing Widgets to your site using nFusion Solutions' reliable, enterprise-class cloud platform for global financial data.",
     "authors": [

@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 This extension adds the capability in Magento to add Precious Metals Pricing Widgets to your site using nFusion Solutions' reliable, enterprise-class cloud platform for global financial data.
